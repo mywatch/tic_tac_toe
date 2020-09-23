@@ -1,7 +1,9 @@
 # tic_tac_toe
 -   [Reference used for making this game] (https://www.ibm.com/developerworks/library/os-using-rust/index.html)
 
--   This a learning project for Rust begineers.
+-   This is a learning project for Rust begineers.
+
+-   To start this game, run `$ cargo run`
 
 -   Game console view:
 

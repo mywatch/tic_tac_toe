@@ -118,7 +118,7 @@ impl Game {
     // is_valid_move
     fn is_valid_move(&self, unchecked_move: u32) -> bool {
         match unchecked_move {
-            1...9 => {
+            1..=9 => {
                 let (row, col) = Self::to_board_location(unchecked_move);
 
                 match self.board[row][col].as_str() {
@@ -168,7 +168,7 @@ impl Game {
         let all_same_diag_2 =
             self.board[0][2] == self.board[1][1] && self.board[1][1] == self.board[2][0];
 
-        (all_same_row || all_same_col || all_same_diag_1 || all_same_diag_2)
+        all_same_row || all_same_col || all_same_diag_1 || all_same_diag_2
     }
 
     // Is player_is_finished
